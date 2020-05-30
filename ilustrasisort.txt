@@ -1,0 +1,39 @@
+//sort angka
+#include <iostream>
+#include <conio.h>
+
+//membuat fungsi menampilkan sort
+
+void ShowS(int arr[],int size){
+    for(int a=0;a<size;a++)
+    cout<<" "<<arr[a];
+    cout<<""<<endl;
+}
+
+//buat fungsi untuk sort angka
+
+int* Sort(int arr[],int size){
+bool active=true;
+int a=1,tmp;
+   while(active){
+		active=false;
+//disini terjadi kemungkinan perulangan dari perpindahan value dalam array jika data dalam array ada 5 isilah size dengan 6 karena 
+//karena var a di isi dengan 1 jika di ++ jadi var a=2, sehingga size-a=(6-2=4)
+		for(int i=0;i<size-a;i++){
+//setelah mendapatkan kemungkinan maka di bandingkan index perindex untuk mencari nilai terbsear. ilustrasi 2,5,6,1,4 
+		if(arr[i]<arr[i+1]){ // saat pertamakali di ulang if(2<5)
+		tmp=arr[i]; // isi var tmp dengan nilai arr[0] = 1
+		arr[i]=arr[i+1]; //isi array ke [0] dengan [1] = 5
+		arr[i+1]=tmp; //isi array ke [1] denagn [5] = 1
+		active=true;  //jika kondisi if masih terpenuhi maka lakukan perulangan hingga index ke 5berisi nilai terbesar
+		 }
+		}
+	}
+return arr;
+}
+
+int main(){
+   int arr[]={1,2,4,3,5};
+   AhowS(Sort(arr,6),5);
+}
+

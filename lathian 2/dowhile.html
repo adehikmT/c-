@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>dowhile.html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="generator" content="SynEdit HTML exporter" />
+<style type="text/css">
+<!--
+body { color: #000000; background-color: #293134; }
+.cpp1-assembler { color: #93C763; }
+.cpp1-character { color: #FF8409; }
+.cpp1-comment { color: #66747B; font-style: italic; }
+.cpp1-float { color: #FFCD22; }
+.cpp1-hexadecimal { color: #FFCD22; }
+.cpp1-identifier { color: #E0E2E4; }
+.cpp1-illegalchar { color: #FB0000; }
+.cpp1-number { color: #FFCD22; }
+.cpp1-octal { color: #FFCD22; }
+.cpp1-preprocessor { color: #A082BD; }
+.cpp1-reservedword { color: #678CB1; }
+.cpp1-space { background-color: #293134; }
+.cpp1-string { color: #EC7600; }
+.cpp1-symbol { color: #E8E2B7; }
+-->
+</style>
+</head>
+<body>
+<pre>
+<code><span style="font: 10pt Consolas;"><span class="cpp1-preprocessor">#include &lt;iostream&gt;
+#include &lt;conio.h&gt;
+
+
+</span><span class="cpp1-reservedword">using</span><span class="cpp1-space"> </span><span class="cpp1-reservedword">namespace</span><span class="cpp1-space"> </span><span class="cpp1-identifier">std</span><span class="cpp1-symbol">;
+
+</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> </span><span class="cpp1-identifier">hitung_PP</span><span class="cpp1-symbol">(</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> </span><span class="cpp1-identifier">p</span><span class="cpp1-symbol">,</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> </span><span class="cpp1-identifier">l</span><span class="cpp1-symbol">){
+</span><span class="cpp1-space">   </span><span class="cpp1-reservedword">return</span><span class="cpp1-space"> </span><span class="cpp1-identifier">p</span><span class="cpp1-symbol">*</span><span class="cpp1-identifier">l</span><span class="cpp1-symbol">;
+}
+
+</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> </span><span class="cpp1-identifier">hitung_P</span><span class="cpp1-symbol">(</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> </span><span class="cpp1-identifier">s</span><span class="cpp1-symbol">){
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">return</span><span class="cpp1-space"> </span><span class="cpp1-identifier">s</span><span class="cpp1-symbol">*</span><span class="cpp1-identifier">s</span><span class="cpp1-symbol">;
+}
+</span><span class="cpp1-space"> 
+</span><span class="cpp1-reservedword">void</span><span class="cpp1-space"> </span><span class="cpp1-identifier">PP</span><span class="cpp1-symbol">(){
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> </span><span class="cpp1-identifier">ulang</span><span class="cpp1-symbol">,</span><span class="cpp1-identifier">p</span><span class="cpp1-symbol">,</span><span class="cpp1-identifier">l</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">do</span><span class="cpp1-symbol">{
+</span><span class="cpp1-space">	</span><span class="cpp1-identifier">system</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;cls&quot;</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">	</span><span class="cpp1-identifier">cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;Persei panjang&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-identifier">cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;Masukan Panjang : &quot;</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-identifier">cin</span><span class="cpp1-symbol">&gt;&gt;</span><span class="cpp1-identifier">p</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-identifier">cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;\nMasukan Lebar : &quot;</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-identifier">cin</span><span class="cpp1-symbol">&gt;&gt;</span><span class="cpp1-identifier">l</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-identifier">cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;\nLuas Persegi Panjang Adalah &quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">hitung_PP</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">p</span><span class="cpp1-symbol">,</span><span class="cpp1-identifier">l</span><span class="cpp1-symbol">)&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-identifier">cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;masukan 2 untuk keluar , masukan bebas untuk menhitung ulang : &quot;</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-identifier">cin</span><span class="cpp1-symbol">&gt;&gt;</span><span class="cpp1-identifier">ulang</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">    </span><span class="cpp1-symbol">}</span><span class="cpp1-reservedword">while</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">ulang</span><span class="cpp1-symbol">!=</span><span class="cpp1-number">2</span><span class="cpp1-symbol">);
+}
+
+</span><span class="cpp1-reservedword">void</span><span class="cpp1-space"> </span><span class="cpp1-identifier">P</span><span class="cpp1-symbol">(){
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> </span><span class="cpp1-identifier">ulang</span><span class="cpp1-symbol">,</span><span class="cpp1-identifier">s</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">do</span><span class="cpp1-symbol">{
+</span><span class="cpp1-space">	</span><span class="cpp1-identifier">system</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;cls&quot;</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">	</span><span class="cpp1-identifier">cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;Persegi&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-identifier">cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;masukan sisi :&quot;</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-identifier">cin</span><span class="cpp1-symbol">&gt;&gt;</span><span class="cpp1-identifier">s</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-identifier">cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;\n Luas Persegi adalah : &quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">hitung_P</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">s</span><span class="cpp1-symbol">)&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-identifier">cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;masukan 2 untuk keluar , masukan bebas untuk menhitung ulang : &quot;</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-identifier">cin</span><span class="cpp1-symbol">&gt;&gt;</span><span class="cpp1-identifier">ulang</span><span class="cpp1-symbol">;</span><span class="cpp1-space">	
+	</span><span class="cpp1-symbol">}</span><span class="cpp1-reservedword">while</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">ulang</span><span class="cpp1-symbol">!=</span><span class="cpp1-number">2</span><span class="cpp1-symbol">);
+}
+
+</span><span class="cpp1-reservedword">void</span><span class="cpp1-space"> </span><span class="cpp1-identifier">SI</span><span class="cpp1-symbol">(){
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> </span><span class="cpp1-identifier">ulang</span><span class="cpp1-symbol">,</span><span class="cpp1-identifier">index</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> </span><span class="cpp1-identifier">arr</span><span class="cpp1-symbol">[]={</span><span class="cpp1-number">2</span><span class="cpp1-symbol">,</span><span class="cpp1-number">1</span><span class="cpp1-symbol">,</span><span class="cpp1-number">3</span><span class="cpp1-symbol">,</span><span class="cpp1-number">5</span><span class="cpp1-symbol">,</span><span class="cpp1-number">6</span><span class="cpp1-symbol">};
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">bool</span><span class="cpp1-space"> </span><span class="cpp1-identifier">cari</span><span class="cpp1-symbol">=</span><span class="cpp1-reservedword">true</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">do</span><span class="cpp1-symbol">{
+</span><span class="cpp1-space">		</span><span class="cpp1-identifier">system</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;cls&quot;</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">		</span><span class="cpp1-identifier">cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;Array {2,1,3,5,6}&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">        </span><span class="cpp1-identifier">cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;masukan value : &quot;</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">		</span><span class="cpp1-identifier">cin</span><span class="cpp1-symbol">&gt;&gt;</span><span class="cpp1-identifier">index</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">		</span><span class="cpp1-reservedword">for</span><span class="cpp1-symbol">(</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> </span><span class="cpp1-identifier">a</span><span class="cpp1-symbol">=</span><span class="cpp1-number">0</span><span class="cpp1-symbol">;</span><span class="cpp1-identifier">a</span><span class="cpp1-symbol">&lt;</span><span class="cpp1-number">5</span><span class="cpp1-symbol">;</span><span class="cpp1-identifier">a</span><span class="cpp1-symbol">++){
+</span><span class="cpp1-space">			</span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">arr</span><span class="cpp1-symbol">[</span><span class="cpp1-identifier">a</span><span class="cpp1-symbol">]==</span><span class="cpp1-identifier">index</span><span class="cpp1-symbol">){
+</span><span class="cpp1-space">			</span><span class="cpp1-identifier">cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;value yang anda cari berada di index ke &quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">a</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">			</span><span class="cpp1-identifier">cari</span><span class="cpp1-symbol">=</span><span class="cpp1-reservedword">false</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">			</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">			</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">			</span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">cari</span><span class="cpp1-symbol">){
+</span><span class="cpp1-space">				</span><span class="cpp1-identifier">cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;value tidak di temukan&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">			</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">		</span><span class="cpp1-identifier">cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;masukan 2 untuk keluar , masukan bebas untuk menhitung ulang : &quot;</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">		</span><span class="cpp1-identifier">cin</span><span class="cpp1-symbol">&gt;&gt;</span><span class="cpp1-identifier">ulang</span><span class="cpp1-symbol">;</span><span class="cpp1-space">			
+	</span><span class="cpp1-symbol">}</span><span class="cpp1-reservedword">while</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">ulang</span><span class="cpp1-symbol">!=</span><span class="cpp1-number">2</span><span class="cpp1-symbol">);
+}
+
+</span><span class="cpp1-reservedword">void</span><span class="cpp1-space"> </span><span class="cpp1-identifier">Sort</span><span class="cpp1-symbol">(</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> </span><span class="cpp1-identifier">arr</span><span class="cpp1-symbol">[],</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> </span><span class="cpp1-identifier">size</span><span class="cpp1-symbol">){
+</span><span class="cpp1-space">     </span><span class="cpp1-reservedword">bool</span><span class="cpp1-space"> </span><span class="cpp1-identifier">ulang</span><span class="cpp1-symbol">=</span><span class="cpp1-reservedword">true</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">     </span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> </span><span class="cpp1-identifier">a</span><span class="cpp1-symbol">,</span><span class="cpp1-identifier">b</span><span class="cpp1-symbol">=</span><span class="cpp1-number">1</span><span class="cpp1-symbol">,</span><span class="cpp1-identifier">tmp</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">     </span><span class="cpp1-reservedword">while</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">ulang</span><span class="cpp1-symbol">){
+</span><span class="cpp1-space">     	</span><span class="cpp1-identifier">b</span><span class="cpp1-symbol">++;
+</span><span class="cpp1-space">	 </span><span class="cpp1-identifier">ulang</span><span class="cpp1-symbol">=</span><span class="cpp1-reservedword">false</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	   </span><span class="cpp1-reservedword">for</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">a</span><span class="cpp1-symbol">=</span><span class="cpp1-number">0</span><span class="cpp1-symbol">;</span><span class="cpp1-identifier">a</span><span class="cpp1-symbol">&lt;</span><span class="cpp1-identifier">size</span><span class="cpp1-symbol">-</span><span class="cpp1-identifier">b</span><span class="cpp1-symbol">;</span><span class="cpp1-identifier">a</span><span class="cpp1-symbol">++){
+</span><span class="cpp1-space">	   	 </span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">arr</span><span class="cpp1-symbol">[</span><span class="cpp1-identifier">a</span><span class="cpp1-symbol">]&gt;</span><span class="cpp1-identifier">arr</span><span class="cpp1-symbol">[</span><span class="cpp1-identifier">a</span><span class="cpp1-symbol">+</span><span class="cpp1-number">1</span><span class="cpp1-symbol">]){
+</span><span class="cpp1-space">	   	 	</span><span class="cpp1-identifier">tmp</span><span class="cpp1-symbol">=</span><span class="cpp1-identifier">arr</span><span class="cpp1-symbol">[</span><span class="cpp1-identifier">a</span><span class="cpp1-symbol">];
+</span><span class="cpp1-space">	   	 	</span><span class="cpp1-identifier">arr</span><span class="cpp1-symbol">[</span><span class="cpp1-identifier">a</span><span class="cpp1-symbol">]=</span><span class="cpp1-identifier">arr</span><span class="cpp1-symbol">[</span><span class="cpp1-identifier">a</span><span class="cpp1-symbol">+</span><span class="cpp1-number">1</span><span class="cpp1-symbol">];
+</span><span class="cpp1-space">	   	 	</span><span class="cpp1-identifier">arr</span><span class="cpp1-symbol">[</span><span class="cpp1-identifier">a</span><span class="cpp1-symbol">+</span><span class="cpp1-number">1</span><span class="cpp1-symbol">]=</span><span class="cpp1-identifier">tmp</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">			</span><span class="cpp1-identifier">ulang</span><span class="cpp1-symbol">=</span><span class="cpp1-reservedword">true</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">			</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">	   </span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">	 </span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">	 </span><span class="cpp1-identifier">cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;Urut : &quot;</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">		</span><span class="cpp1-reservedword">for</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">a</span><span class="cpp1-symbol">=</span><span class="cpp1-number">0</span><span class="cpp1-symbol">;</span><span class="cpp1-identifier">a</span><span class="cpp1-symbol">&lt;</span><span class="cpp1-number">5</span><span class="cpp1-symbol">;</span><span class="cpp1-identifier">a</span><span class="cpp1-symbol">++){
+</span><span class="cpp1-space">			</span><span class="cpp1-identifier">cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">arr</span><span class="cpp1-symbol">[</span><span class="cpp1-identifier">a</span><span class="cpp1-symbol">];
+</span><span class="cpp1-space">		</span><span class="cpp1-symbol">}
+}
+
+</span><span class="cpp1-reservedword">void</span><span class="cpp1-space"> </span><span class="cpp1-identifier">SA</span><span class="cpp1-symbol">(){
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> </span><span class="cpp1-identifier">ulang</span><span class="cpp1-symbol">,</span><span class="cpp1-identifier">a</span><span class="cpp1-symbol">,</span><span class="cpp1-identifier">arr</span><span class="cpp1-symbol">[</span><span class="cpp1-number">5</span><span class="cpp1-symbol">];
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">do</span><span class="cpp1-symbol">{
+</span><span class="cpp1-space">		</span><span class="cpp1-identifier">system</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;cls&quot;</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">		</span><span class="cpp1-identifier">cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;Masukan 5 angka Acak : &quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">		</span><span class="cpp1-reservedword">for</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">a</span><span class="cpp1-symbol">=</span><span class="cpp1-number">0</span><span class="cpp1-symbol">;</span><span class="cpp1-identifier">a</span><span class="cpp1-symbol">&lt;</span><span class="cpp1-number">5</span><span class="cpp1-symbol">;</span><span class="cpp1-identifier">a</span><span class="cpp1-symbol">++){
+</span><span class="cpp1-space">		</span><span class="cpp1-identifier">cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;angka ke-&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">a</span><span class="cpp1-symbol">+</span><span class="cpp1-number">1</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot; :&quot;</span><span class="cpp1-symbol">;</span><span class="cpp1-space">	
+		</span><span class="cpp1-identifier">cin</span><span class="cpp1-symbol">&gt;&gt;</span><span class="cpp1-identifier">arr</span><span class="cpp1-symbol">[</span><span class="cpp1-identifier">a</span><span class="cpp1-symbol">];
+</span><span class="cpp1-space">		</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">		</span><span class="cpp1-identifier">Sort</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">arr</span><span class="cpp1-symbol">,</span><span class="cpp1-number">6</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">		</span><span class="cpp1-identifier">cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;\nmasukan 2 untuk keluar , masukan bebas untuk menhitung ulang : &quot;</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">		</span><span class="cpp1-identifier">cin</span><span class="cpp1-symbol">&gt;&gt;</span><span class="cpp1-identifier">ulang</span><span class="cpp1-symbol">;</span><span class="cpp1-space">	
+	</span><span class="cpp1-symbol">}</span><span class="cpp1-reservedword">while</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">ulang</span><span class="cpp1-symbol">!=</span><span class="cpp1-number">2</span><span class="cpp1-symbol">);
+}
+
+</span><span class="cpp1-reservedword">void</span><span class="cpp1-space"> </span><span class="cpp1-identifier">menu</span><span class="cpp1-symbol">(){
+</span><span class="cpp1-space">	</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> </span><span class="cpp1-identifier">pilih</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">  </span><span class="cpp1-reservedword">do</span><span class="cpp1-symbol">{
+</span><span class="cpp1-space">  	</span><span class="cpp1-identifier">system</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;cls&quot;</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">  	</span><span class="cpp1-identifier">cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;Pilih Menu&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-identifier">cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;1. Persegi&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-identifier">cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;2. Persegi Panjang&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-identifier">cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;3. Serch Index&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-identifier">cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;4. Sort angka&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-identifier">cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;5. Exit&quot;</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-identifier">endl</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-identifier">cout</span><span class="cpp1-symbol">&lt;&lt;</span><span class="cpp1-string">&quot;pilih : &quot;</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	</span><span class="cpp1-identifier">cin</span><span class="cpp1-symbol">&gt;&gt;</span><span class="cpp1-identifier">pilih</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	
+	</span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">pilih</span><span class="cpp1-symbol">==</span><span class="cpp1-number">1</span><span class="cpp1-symbol">){
+</span><span class="cpp1-space">     </span><span class="cpp1-identifier">P</span><span class="cpp1-symbol">();
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">}</span><span class="cpp1-reservedword">else</span><span class="cpp1-space"> </span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">pilih</span><span class="cpp1-symbol">==</span><span class="cpp1-number">2</span><span class="cpp1-symbol">){
+</span><span class="cpp1-space">	 </span><span class="cpp1-identifier">PP</span><span class="cpp1-symbol">();
+</span><span class="cpp1-space">	</span><span class="cpp1-symbol">}</span><span class="cpp1-reservedword">else</span><span class="cpp1-space"> </span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">pilih</span><span class="cpp1-symbol">==</span><span class="cpp1-number">3</span><span class="cpp1-symbol">){
+</span><span class="cpp1-space">	 </span><span class="cpp1-identifier">SI</span><span class="cpp1-symbol">();</span><span class="cpp1-space">	
+	</span><span class="cpp1-symbol">}</span><span class="cpp1-reservedword">else</span><span class="cpp1-space"> </span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">pilih</span><span class="cpp1-symbol">==</span><span class="cpp1-number">4</span><span class="cpp1-symbol">){
+</span><span class="cpp1-space">	  </span><span class="cpp1-identifier">SA</span><span class="cpp1-symbol">();</span><span class="cpp1-space">	
+	</span><span class="cpp1-symbol">}
+</span><span class="cpp1-space">	
+  </span><span class="cpp1-symbol">}</span><span class="cpp1-reservedword">while</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">pilih</span><span class="cpp1-symbol">!=</span><span class="cpp1-number">5</span><span class="cpp1-symbol">);
+}
+
+</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> </span><span class="cpp1-identifier">main</span><span class="cpp1-symbol">(){
+</span><span class="cpp1-space">	</span><span class="cpp1-identifier">menu</span><span class="cpp1-symbol">();
+}
+</span></span>
+</code></pre>
+</body>
+</html>
